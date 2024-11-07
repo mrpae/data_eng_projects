@@ -46,6 +46,14 @@ then we have normal access to the masked data.
 
 # Usage
 
+0. Create a `.env` file that contains the following:
+* MINIO_ROOT_USER
+* MINIO_ROOT_PASSWORD
+* MINIO_DOMAIN
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* PARQUET_ENCRYPTION_KEY
+
 1. After pulling the repository, run `docker compose up -d`. 
 2. Open [localhost:9001](`http://localhost:9001/browser/users`) and insert access credentials that are specified in your `.env` file.
 3. Upload `rand_users100.json` to the `users` bucket.
